@@ -54,8 +54,9 @@ public class User
 
     [Column("password")]
     [MaxLength(250)]
+    public string Password { get; set; }
 
-// freingkeys for navigation properties
+    // freingkeys for navigation properties
     [ForeignKey("role_id")]
     public Role Role { get; set; }
 
@@ -64,23 +65,21 @@ public class User
     {
 
     }
-
-    public string Password { get; set; }
     public User(int rolId, string firstName, string lastName, string gender, int age, DateTime dateOfBirth,
             string nationality, string occupation, string phoneNumber, string address, string email, string password)
-{
-    RoleId = rolId;
-    FirstName = firstName;
-    LastName = lastName;
-    Gender = gender;
-    Age = age;
-    DateOfBirth = dateOfBirth;
-    Nationality = nationality;
-    Occupation = occupation;
-    PhoneNumber = phoneNumber;
-    Address = address;
-    Email = email;
-    Password = password;
-}
+    {
+        RoleId = rolId;
+        FirstName = firstName;
+        LastName = lastName;
+        Gender = gender;
+        Age = age;
+        DateOfBirth = dateOfBirth;
+        Nationality = nationality;
+        Occupation = occupation;
+        PhoneNumber = phoneNumber;
+        Address = address;
+        Email = email;
+        Password = password;
+    }
 
 }
