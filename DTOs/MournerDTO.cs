@@ -30,7 +30,7 @@ public class MournerDTO
     public string Nationality { get; set; }
 
     [MaxLength(100, ErrorMessage = "Your occupation can not have more than 100 characters")]
-    public string? Occupation { get; set; }
+    public string Occupation { get; set; }
 
     [MaxLength(150, ErrorMessage = "Your phone number can not have more than 150 characters")]
     public string PhoneNumber { get; set; }

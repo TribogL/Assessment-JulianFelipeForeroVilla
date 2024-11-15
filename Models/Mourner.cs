@@ -36,7 +36,7 @@ public class Mourner
 
     [Column("occupation")]
     [MaxLength(100)]
-    public string Occupation { get; set; }
+    public string? Occupation { get; set; }
 
     [Column("phone_number")]
     [MaxLength(150)]
@@ -53,10 +53,6 @@ public class Mourner
     [Column("password")]
     [MaxLength(250)]
     public string Password { get; set; }
-
-    // freingkeys for navigation properties
-    [ForeignKey("role_id")]
-    public Role Role { get; set; }
 
 
     public Mourner()
