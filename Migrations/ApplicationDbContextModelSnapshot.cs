@@ -166,132 +166,132 @@ namespace Assessment_JulianFelipeForeroVilla.Migrations
                         new
                         {
                             Id = 1,
-                            Address = "0139 Konopelski Turnpike",
-                            Age = 38,
-                            DateOfBirth = new DateTime(1956, 5, 8, 18, 4, 12, 469, DateTimeKind.Local).AddTicks(9249),
-                            Email = "Maye.Schoen25@yahoo.com",
-                            FirstName = "Stacey",
+                            Address = "694 Tillman Mission",
+                            Age = 51,
+                            DateOfBirth = new DateTime(1960, 11, 29, 10, 52, 35, 419, DateTimeKind.Local).AddTicks(3734),
+                            Email = "Elwin_Abernathy@hotmail.com",
+                            FirstName = "Kaelyn",
                             Gender = "Other",
-                            LastName = "Toy",
-                            Password = "veaiiooo",
-                            PhoneNumber = "446-476-8517"
+                            LastName = "Hammes",
+                            Password = "niuuiaou",
+                            PhoneNumber = "324-533-8601 x273"
                         },
                         new
                         {
                             Id = 2,
-                            Address = "031 Zoie Pines",
-                            Age = 28,
-                            DateOfBirth = new DateTime(1958, 4, 23, 17, 43, 14, 887, DateTimeKind.Local).AddTicks(5275),
-                            Email = "Nikita33@gmail.com",
-                            FirstName = "Hank",
-                            Gender = "Male",
-                            LastName = "Rutherford",
-                            Password = "zaoaeuua",
-                            PhoneNumber = "652-489-1306 x749"
+                            Address = "2042 Buster Shoal",
+                            Age = 83,
+                            DateOfBirth = new DateTime(1958, 8, 10, 7, 30, 23, 758, DateTimeKind.Local).AddTicks(2976),
+                            Email = "Felix_Kerluke83@yahoo.com",
+                            FirstName = "Ena",
+                            Gender = "Other",
+                            LastName = "Johnston",
+                            Password = "geiiueiu",
+                            PhoneNumber = "890-752-5368"
                         },
                         new
                         {
                             Id = 3,
-                            Address = "2064 Wunsch Road",
-                            Age = 24,
-                            DateOfBirth = new DateTime(1953, 12, 17, 12, 32, 19, 806, DateTimeKind.Local).AddTicks(3147),
-                            Email = "Mathias_Conroy55@hotmail.com",
-                            FirstName = "Alberto",
-                            Gender = "Female",
-                            LastName = "Kub",
-                            Password = "cuooiuia",
-                            PhoneNumber = "257-547-1923"
+                            Address = "1381 Sipes Mews",
+                            Age = 61,
+                            DateOfBirth = new DateTime(1934, 12, 25, 9, 58, 46, 271, DateTimeKind.Local).AddTicks(8006),
+                            Email = "Cary_Kerluke99@gmail.com",
+                            FirstName = "Andreanne",
+                            Gender = "Male",
+                            LastName = "King",
+                            Password = "quiueoou",
+                            PhoneNumber = "465.796.1952 x14151"
                         },
                         new
                         {
                             Id = 4,
-                            Address = "8457 Kristian Village",
-                            Age = 93,
-                            DateOfBirth = new DateTime(1943, 9, 29, 5, 25, 37, 233, DateTimeKind.Local).AddTicks(4202),
-                            Email = "Julien_Mayert99@hotmail.com",
-                            FirstName = "Everette",
-                            Gender = "Male",
-                            LastName = "Lebsack",
-                            Password = "riooeioa",
-                            PhoneNumber = "330-491-2873 x107"
+                            Address = "026 Constance Circles",
+                            Age = 54,
+                            DateOfBirth = new DateTime(1973, 5, 7, 15, 0, 6, 150, DateTimeKind.Local).AddTicks(5915),
+                            Email = "Elias_Hamill81@hotmail.com",
+                            FirstName = "Domingo",
+                            Gender = "Other",
+                            LastName = "Gerlach",
+                            Password = "qiuuaaao",
+                            PhoneNumber = "238.500.8677 x69049"
                         },
                         new
                         {
                             Id = 5,
-                            Address = "7944 Dayna Via",
-                            Age = 22,
-                            DateOfBirth = new DateTime(1931, 7, 29, 5, 37, 28, 804, DateTimeKind.Local).AddTicks(2813),
-                            Email = "Olaf.Brown@hotmail.com",
-                            FirstName = "Carmen",
+                            Address = "62869 Emory Mount",
+                            Age = 74,
+                            DateOfBirth = new DateTime(1930, 2, 19, 8, 12, 48, 93, DateTimeKind.Local).AddTicks(2248),
+                            Email = "Floy27@yahoo.com",
+                            FirstName = "Shea",
                             Gender = "Male",
-                            LastName = "Nader",
-                            Password = "woiuuaie",
-                            PhoneNumber = "813.311.2074 x60398"
+                            LastName = "Botsford",
+                            Password = "yieeaeeo",
+                            PhoneNumber = "998-689-2252"
                         },
                         new
                         {
                             Id = 6,
-                            Address = "6938 Sincere Circles",
-                            Age = 68,
-                            DateOfBirth = new DateTime(1942, 12, 1, 21, 43, 41, 706, DateTimeKind.Local).AddTicks(2977),
-                            Email = "Paxton_Brown56@hotmail.com",
-                            FirstName = "Velma",
-                            Gender = "Other",
-                            LastName = "Halvorson",
-                            Password = "rueeooue",
-                            PhoneNumber = "629-439-8091 x030"
+                            Address = "8337 Brycen Loop",
+                            Age = 91,
+                            DateOfBirth = new DateTime(2004, 8, 1, 22, 29, 23, 685, DateTimeKind.Local).AddTicks(9214),
+                            Email = "Durward.McLaughlin@gmail.com",
+                            FirstName = "Madie",
+                            Gender = "Female",
+                            LastName = "Monahan",
+                            Password = "ceieeuae",
+                            PhoneNumber = "896-899-5034 x30967"
                         },
                         new
                         {
                             Id = 7,
-                            Address = "7856 Sabryna Vista",
-                            Age = 99,
-                            DateOfBirth = new DateTime(1950, 3, 11, 10, 24, 24, 877, DateTimeKind.Local).AddTicks(2229),
-                            Email = "Josie.VonRueden@gmail.com",
-                            FirstName = "Rosemarie",
+                            Address = "0767 Roel Club",
+                            Age = 33,
+                            DateOfBirth = new DateTime(1940, 4, 15, 5, 34, 1, 727, DateTimeKind.Local).AddTicks(1214),
+                            Email = "Johnnie.Grimes95@hotmail.com",
+                            FirstName = "Travon",
                             Gender = "Female",
-                            LastName = "Kemmer",
-                            Password = "tiiieiio",
-                            PhoneNumber = "294.884.1718 x071"
+                            LastName = "Bode",
+                            Password = "zeaiiiie",
+                            PhoneNumber = "(674) 831-3146 x650"
                         },
                         new
                         {
                             Id = 8,
-                            Address = "3912 Crooks Green",
-                            Age = 46,
-                            DateOfBirth = new DateTime(1994, 1, 4, 0, 20, 26, 208, DateTimeKind.Local).AddTicks(9872),
-                            Email = "Kacey_Bednar@hotmail.com",
-                            FirstName = "Rylan",
-                            Gender = "Other",
-                            LastName = "Bartell",
-                            Password = "deuieuio",
-                            PhoneNumber = "1-320-451-4113"
+                            Address = "5520 Bayer Manors",
+                            Age = 87,
+                            DateOfBirth = new DateTime(1996, 6, 28, 7, 42, 11, 953, DateTimeKind.Local).AddTicks(38),
+                            Email = "Joyce_Schoen40@gmail.com",
+                            FirstName = "Stephanie",
+                            Gender = "Female",
+                            LastName = "Wunsch",
+                            Password = "loaiuiui",
+                            PhoneNumber = "524.742.7021 x864"
                         },
                         new
                         {
                             Id = 9,
-                            Address = "481 Gustave Lodge",
-                            Age = 97,
-                            DateOfBirth = new DateTime(2000, 8, 23, 12, 17, 36, 866, DateTimeKind.Local).AddTicks(8367),
-                            Email = "Jared_Hessel@yahoo.com",
-                            FirstName = "Elza",
-                            Gender = "Male",
-                            LastName = "Heaney",
-                            Password = "qieeouue",
-                            PhoneNumber = "916-976-0779"
+                            Address = "00616 Schmeler Keys",
+                            Age = 68,
+                            DateOfBirth = new DateTime(1959, 10, 20, 3, 23, 26, 549, DateTimeKind.Local).AddTicks(3982),
+                            Email = "Orion75@gmail.com",
+                            FirstName = "Buford",
+                            Gender = "Female",
+                            LastName = "Kuvalis",
+                            Password = "nooeooua",
+                            PhoneNumber = "281-441-0419 x2804"
                         },
                         new
                         {
                             Id = 10,
-                            Address = "0467 Bonita Plain",
-                            Age = 64,
-                            DateOfBirth = new DateTime(1940, 4, 10, 15, 15, 56, 906, DateTimeKind.Local).AddTicks(870),
-                            Email = "Oswaldo.OConner83@gmail.com",
-                            FirstName = "Efren",
-                            Gender = "Other",
-                            LastName = "Mitchell",
-                            Password = "caoeeiio",
-                            PhoneNumber = "241-745-7658"
+                            Address = "0441 Cassin Fords",
+                            Age = 98,
+                            DateOfBirth = new DateTime(2002, 1, 14, 7, 19, 10, 884, DateTimeKind.Local).AddTicks(4722),
+                            Email = "Odie.Bayer@hotmail.com",
+                            FirstName = "Bonita",
+                            Gender = "Female",
+                            LastName = "Morissette",
+                            Password = "fueaueoo",
+                            PhoneNumber = "1-952-282-7462"
                         });
                 });
 
@@ -319,6 +319,98 @@ namespace Assessment_JulianFelipeForeroVilla.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("specialties");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Specialty focused on heart health and diseases",
+                            Name = "Cardiology"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Specialty dealing with disorders of the nervous system",
+                            Name = "Neurology"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Specialty for children's health and diseases",
+                            Name = "Pediatrics"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Description = "Specialty for skin, hair, and nail conditions",
+                            Name = "Dermatology"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Description = "Specialty for the musculoskeletal system",
+                            Name = "Orthopedics"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Description = "Specialty for cancer diagnosis and treatment",
+                            Name = "Oncology"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Description = "Specialty for mental health disorders and treatments",
+                            Name = "Psychiatry"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Description = "Specialty for female reproductive health",
+                            Name = "Gynecology"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Description = "Specialty for eye health and vision disorders",
+                            Name = "Ophthalmology"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Description = "Specialty focused on anesthesia and perioperative care",
+                            Name = "Anesthesiology"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Description = "Specialty for hormonal disorders and diseases",
+                            Name = "Endocrinology"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Description = "Specialty for digestive system disorders",
+                            Name = "Gastroenterology"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Description = "Specialty for urinary tract and male reproductive system",
+                            Name = "Urology"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Description = "Specialty for lung and respiratory system disorders",
+                            Name = "Pulmonology"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Description = "Specialty for autoimmune and musculoskeletal diseases",
+                            Name = "Rheumatology"
+                        });
                 });
 
             modelBuilder.Entity("Assessment_JulianFelipeForeroVilla.Models.Doctor", b =>
