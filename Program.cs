@@ -23,6 +23,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<ISpecialtyRepository, SpecialtyServices>();
 builder.Services.AddScoped<IMournerRepository, MournerServices>();
 builder.Services.AddScoped<IDoctorRepository, DoctorServices>();
+builder.Services.AddScoped<IAppointmentRepository, AppointmentServices>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

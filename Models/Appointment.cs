@@ -1,5 +1,3 @@
-
-
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -13,40 +11,44 @@ public class Appointment
     [Column("id")]
     public int Id { get; set; }
 
+    [Required]
     [Column("mourner_id")]
     public int MournerId { get; set; }
 
+    [Required]
     [Column("doctor_id")]
     public int DoctorId { get; set; }
 
-    [Column("appointment_date")]
-    public DateTime AppointmentDate { get; set; }
+    [Required]
+    [Column("appointment_datetime")]
+    public DateTime AppointmentDateTime { get; set; }
 
-    [Column("appointment_time")]
-    public TimeSpan AppointmentTime { get; set; }
-
+    [Required]
     [Column("status")]
+    [MaxLength(100)]
     public string Status { get; set; }
 
     [Column("reason")]
     [MaxLength(250)]
     public string Reason { get; set; }
 
-    // freingkeys for navigation properties
-    [ForeignKey("role_id")]
-    public Mourner Mourner { get; set; }
-
-    [ForeignKey("doctor_id")]
+    // Foreign keys for navigation properties
+    [ForeignKey("MournerId")]
+    public Mourner Mourner { get; set; } 
+    [ForeignKey("DoctorId")]
     public Doctor Doctor { get; set; }
 
-    public Appointment(int mournerId, int doctorId, DateTime appointmentDate, TimeSpan appointmentTime, string status, string reason)
+    public Appointment()
+    {
+        Status = "Scheduled"; // Estado predeterminado
+    }
+
+    public Appointment(int mournerId, int doctorId, DateTime appointmentDateTime, string status, string reason)
     {
         MournerId = mournerId;
         DoctorId = doctorId;
-        AppointmentDate = appointmentDate;
-        AppointmentTime = appointmentTime;
-        Status = status;
+        AppointmentDateTime = appointmentDateTime;
+        Status = status ?? "Scheduled"; // Valor predeterminado si no se especifica
         Reason = reason;
-
     }
 }

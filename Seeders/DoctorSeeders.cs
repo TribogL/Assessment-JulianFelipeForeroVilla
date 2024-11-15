@@ -17,15 +17,15 @@ public class DoctorSeeders
     private static IEnumerable<Doctor> GenerateDoctors(int count)
     {
         var faker = new Faker<Doctor>()
-            .RuleFor(u => u.Id, f => f.IndexFaker + 1) // IDs únicos para cada usuario
-            .RuleFor(u => u.FirstName, f => f.Name.FirstName()) // Nombre aleatorio
-            .RuleFor(u => u.LastName, f => f.Name.LastName()) // Apellido aleatorio
+            .RuleFor(u => u.Id, f => f.IndexFaker + 1) 
+            .RuleFor(u => u.FirstName, f => f.Name.FirstName()) 
+            .RuleFor(u => u.LastName, f => f.Name.LastName()) 
             .RuleFor(u => u.SpecialtyId, f => f.PickRandom(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }))
             .RuleFor(u => u.Office, f => f.Random.Int(1, 300))
-            .RuleFor(u => u.Status, f => f.Company.CompanyName()) // Estado aleatorio
-            .RuleFor(u => u.Gender, f => f.PickRandom(new[] { "Male", "Female", "Other" })) // Género
-            .RuleFor(u => u.Email, f => f.Internet.Email()) // Email aleatorio
-            .RuleFor(u => u.Password, f => f.Internet.Password(8, true)); // Contraseña segura de 8 caracteres o más
+            .RuleFor(u => u.Status, f => f.Company.CompanyName())
+            .RuleFor(u => u.Gender, f => f.PickRandom(new[] { "Male", "Female", "Other" })) 
+            .RuleFor(u => u.Email, f => f.Internet.Email()) 
+            .RuleFor(u => u.Password, f => f.Internet.Password(8, true)); 
 
         return faker.Generate(count);
     }
