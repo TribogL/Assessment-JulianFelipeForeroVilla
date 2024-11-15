@@ -1,5 +1,6 @@
 
 using Assessment_JulianFelipeForeroVilla.Models;
+using Assessment_JulianFelipeForeroVilla.Seeders;
 using Microsoft.EntityFrameworkCore;
 
 namespace Assessment_JulianFelipeForeroVilla.Data;
@@ -15,7 +16,8 @@ public class ApplicationDbContext : DbContext
     {
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        
+    {   
+            base.OnModelCreating(modelBuilder);
+            RolesSeeders.Seed(modelBuilder);
     }
 }

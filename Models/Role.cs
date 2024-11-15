@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Assessment_JulianFelipeForeroVilla.Models;
-[Table("role")]
+[Table("roles")]
 public class Role
 {
     [Key]
@@ -19,9 +19,8 @@ public class Role
     [MaxLength(250)]
     public string Description { get; set; }
 
-    public Role(int id, string name, string description)
+    public Role( string name, string description)
     {
-        Id = id;
         Name = name;
         Description = description;
 
