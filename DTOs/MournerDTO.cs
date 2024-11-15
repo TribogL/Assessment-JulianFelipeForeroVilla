@@ -27,16 +27,16 @@ public class MournerDTO
 
     // Contact information
     [MaxLength(100, ErrorMessage = "Your nationality can not have more than 100 characters")]
-    public string? Nationality { get; set; }
+    public string Nationality { get; set; }
 
     [MaxLength(100, ErrorMessage = "Your occupation can not have more than 100 characters")]
     public string? Occupation { get; set; }
 
     [MaxLength(150, ErrorMessage = "Your phone number can not have more than 150 characters")]
-    public string? PhoneNumber { get; set; }
+    public string PhoneNumber { get; set; }
 
     [MaxLength(250, ErrorMessage = "Your address can not have more than 250 characters")]
-    public string? Address { get; set; }
+    public string Address { get; set; }
 
     // credencials
     [Required]

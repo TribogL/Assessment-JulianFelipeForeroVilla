@@ -10,8 +10,6 @@ public class Mourner
     [Column("id")]
     public int Id { get; set; }
 
-    [Column("rol_id")]
-    public int RoleId { get; set; }
 
     [Column("first_name")]
     [MaxLength(250)]
@@ -65,10 +63,9 @@ public class Mourner
     {
 
     }
-    public Mourner(int rolId, string firstName, string lastName, string gender, int age, DateTime dateOfBirth,
+    public Mourner(string firstName, string lastName, string gender, int age, DateTime dateOfBirth,
             string nationality, string occupation, string phoneNumber, string address, string email, string password)
     {
-        RoleId = rolId;
         FirstName = firstName;
         LastName = lastName;
         Gender = gender;

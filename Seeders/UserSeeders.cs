@@ -23,7 +23,6 @@ public class MournerSeeders
             .RuleFor(u => u.PhoneNumber, f => f.Phone.PhoneNumber()) // Número de teléfono
             .RuleFor(u => u.Address, f => f.Address.StreetAddress()) // Dirección aleatoria
             .RuleFor(u => u.Gender, f => f.PickRandom(new[] { "Male", "Female", "Other" })) // Género
-            .RuleFor(u => u.RoleId, f => f.PickRandom(new[] { 1, 2 })) // Asignar RoleId aleatoriamente (1 = Patient, 2 = Doctor)
             .RuleFor(u => u.Email, f => f.Internet.Email()) // Email aleatorio
             .RuleFor(u => u.Password, f => f.Internet.Password(8, true)) // Contraseña segura de 8 caracteres o más
             .RuleFor(u => u.DateOfBirth, f => f.Date.Past(80, DateTime.Now.AddYears(-18))); // Fecha de nacimiento calculada

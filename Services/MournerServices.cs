@@ -18,7 +18,7 @@ public class MournerServices : IMournerRepository
 
     public async Task<Mourner> Create(MournerDTO MournerDTO)
     {
-        var Mourner = new Mourner(MournerDTO.RoleId,MournerDTO.FirstName, MournerDTO.LastName, MournerDTO.Gender, MournerDTO.Age, MournerDTO.DateOfBirth, MournerDTO.Nationality, MournerDTO.Occupation, MournerDTO.PhoneNumber, MournerDTO.Address, MournerDTO.Email, MournerDTO.Password);
+        var Mourner = new Mourner(MournerDTO.FirstName, MournerDTO.LastName, MournerDTO.Gender, MournerDTO.Age, MournerDTO.DateOfBirth, MournerDTO.Nationality, MournerDTO.Occupation, MournerDTO.PhoneNumber, MournerDTO.Address, MournerDTO.Email, MournerDTO.Password);
         _context.Mourners.Add(Mourner);
         await _context.SaveChangesAsync();
         return Mourner;
