@@ -1,0 +1,6 @@
+@Assessment_JulianFelipeForeroVilla_HostAddress = http://localhost:5092
+
+GET {{Assessment_JulianFelipeForeroVilla_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
