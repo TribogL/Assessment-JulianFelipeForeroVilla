@@ -3,19 +3,19 @@ using Bogus;
 using Microsoft.EntityFrameworkCore;
 
 namespace Assessment_JulianFelipeForeroVilla.Seeders;
-public class UserSeeders
+public class MournerSeeders
 {
     public static void Seed(ModelBuilder modelBuilder)
     {
-        var users = GenerateUsers(10);
-        var allUsers = users.ToList();
+        var Mourners = GenerateMourners(10);
+        var allMourners = Mourners.ToList();
 
-        modelBuilder.Entity<User>().HasData(allUsers);
+        modelBuilder.Entity<Mourner>().HasData(allMourners);
     }
 
-    private static IEnumerable<User> GenerateUsers(int count)
+    private static IEnumerable<Mourner> GenerateMourners(int count)
     {
-        var faker = new Faker<User>()
+        var faker = new Faker<Mourner>()
             .RuleFor(u => u.Id, f => f.IndexFaker + 1) // IDs únicos para cada usuario
             .RuleFor(u => u.FirstName, f => f.Name.FirstName()) // Nombre aleatorio
             .RuleFor(u => u.LastName, f => f.Name.LastName()) // Apellido aleatorio

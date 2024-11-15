@@ -2,8 +2,8 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Assessment_JulianFelipeForeroVilla.Models;
-[Table("users")]
-public class User
+[Table("mourners")]
+public class Mourner
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -38,15 +38,15 @@ public class User
 
     [Column("occupation")]
     [MaxLength(100)]
-    public string? Occupation { get; set; }
+    public string Occupation { get; set; }
 
     [Column("phone_number")]
     [MaxLength(150)]
-    public string? PhoneNumber { get; set; }
+    public string PhoneNumber { get; set; }
 
     [Column("address")]
     [MaxLength(250)]
-    public string? Address { get; set; }
+    public string Address { get; set; }
 
     [Column("email")]
     [MaxLength(100)]
@@ -61,11 +61,11 @@ public class User
     public Role Role { get; set; }
 
 
-    public User()
+    public Mourner()
     {
 
     }
-    public User(int rolId, string firstName, string lastName, string gender, int age, DateTime dateOfBirth,
+    public Mourner(int rolId, string firstName, string lastName, string gender, int age, DateTime dateOfBirth,
             string nationality, string occupation, string phoneNumber, string address, string email, string password)
     {
         RoleId = rolId;

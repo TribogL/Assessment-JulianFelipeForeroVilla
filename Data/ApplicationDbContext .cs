@@ -7,11 +7,10 @@ namespace Assessment_JulianFelipeForeroVilla.Data;
 public class ApplicationDbContext : DbContext
 {
 
-  public DbSet<User> Users { get; set; }
+  public DbSet<Mourner> Mourners { get; set; }
   public DbSet<Role> Roles { get; set; }
 
-
-  public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
     : base(options)
   {
   }
@@ -19,6 +18,6 @@ public class ApplicationDbContext : DbContext
   {
     base.OnModelCreating(modelBuilder);
     RolesSeeders.Seed(modelBuilder);
-    UserSeeders.Seed(modelBuilder);
+    MournerSeeders.Seed(modelBuilder);
   }
 }

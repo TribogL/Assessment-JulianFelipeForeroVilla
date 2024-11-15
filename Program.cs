@@ -21,7 +21,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.Parse("8.0.20-mysql")));
 
 builder.Services.AddScoped<IRoleRepository, RoleServices>();
-builder.Services.AddScoped<IUserRepository, UserServices>();
+builder.Services.AddScoped<IMournerRepository, MournerServices>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Assessment_JulianFelipeForeroVilla.DTOs;
 
-public class UserDTO
+public class MournerDTO
 {
     // Basic information
     [Required]
@@ -49,7 +49,7 @@ public class UserDTO
     [MaxLength(250, ErrorMessage = "Your password can not have more than 250 characters")]
     public string Password { get; set; }
 
-    // User role
+    // Mourner role
     [Required(ErrorMessage = "Role is required.")]
     public int RoleId { get; set; }
 }
