@@ -4,6 +4,7 @@ using Assessment_JulianFelipeForeroVilla.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Assessment_JulianFelipeForeroVilla.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241115154748_CreateTableUser")]
+    partial class CreateTableUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -144,142 +147,142 @@ namespace Assessment_JulianFelipeForeroVilla.Migrations
                         new
                         {
                             Id = 1,
-                            Address = "47152 Labadie Fort",
-                            Age = 91,
-                            DateOfBirth = new DateTime(1972, 8, 6, 15, 2, 47, 874, DateTimeKind.Local).AddTicks(8099),
-                            Email = "Celine15@gmail.com",
-                            FirstName = "Lera",
-                            Gender = "Male",
-                            LastName = "Gottlieb",
-                            Password = "nieouauo",
-                            PhoneNumber = "614-247-2021",
+                            Address = "523 Reyes Vista",
+                            Age = 34,
+                            DateOfBirth = new DateTime(2004, 5, 5, 18, 15, 29, 684, DateTimeKind.Local).AddTicks(2408),
+                            Email = "Jeanne.Hudson@yahoo.com",
+                            FirstName = "Terry",
+                            Gender = "Female",
+                            LastName = "Bartell",
+                            Password = "tuaeuaua",
+                            PhoneNumber = "1-572-624-9558 x777",
                             RoleId = 1
                         },
                         new
                         {
                             Id = 2,
-                            Address = "57909 Rempel Shoals",
-                            Age = 53,
-                            DateOfBirth = new DateTime(1954, 2, 23, 2, 25, 1, 478, DateTimeKind.Local).AddTicks(5165),
-                            Email = "Nicholaus92@hotmail.com",
-                            FirstName = "Sean",
+                            Address = "80617 Hauck Gateway",
+                            Age = 63,
+                            DateOfBirth = new DateTime(1929, 9, 4, 7, 47, 18, 703, DateTimeKind.Local).AddTicks(8629),
+                            Email = "Hildegard85@hotmail.com",
+                            FirstName = "Hoyt",
                             Gender = "Male",
-                            LastName = "Murazik",
-                            Password = "soeeaeao",
-                            PhoneNumber = "450.706.0421",
-                            RoleId = 2
+                            LastName = "Berge",
+                            Password = "joaeeiao",
+                            PhoneNumber = "1-997-766-6888 x3850",
+                            RoleId = 1
                         },
                         new
                         {
                             Id = 3,
-                            Address = "09524 Joelle Ridge",
-                            Age = 85,
-                            DateOfBirth = new DateTime(2002, 7, 8, 17, 35, 46, 862, DateTimeKind.Local).AddTicks(1055),
-                            Email = "Sally8@gmail.com",
-                            FirstName = "Myrtle",
+                            Address = "8943 Emiliano Oval",
+                            Age = 60,
+                            DateOfBirth = new DateTime(1949, 11, 6, 11, 32, 29, 957, DateTimeKind.Local).AddTicks(6163),
+                            Email = "Dixie70@hotmail.com",
+                            FirstName = "Stephania",
                             Gender = "Female",
-                            LastName = "Wyman",
-                            Password = "poieaouo",
-                            PhoneNumber = "(656) 873-5819",
-                            RoleId = 1
+                            LastName = "Monahan",
+                            Password = "louoioou",
+                            PhoneNumber = "873-484-9501 x83798",
+                            RoleId = 2
                         },
                         new
                         {
                             Id = 4,
-                            Address = "0785 Daron Divide",
-                            Age = 71,
-                            DateOfBirth = new DateTime(1989, 8, 24, 5, 45, 32, 251, DateTimeKind.Local).AddTicks(973),
-                            Email = "Cara.Waters@hotmail.com",
-                            FirstName = "Ramiro",
-                            Gender = "Female",
-                            LastName = "Kub",
-                            Password = "woieooea",
-                            PhoneNumber = "581-532-7648 x60036",
-                            RoleId = 1
+                            Address = "7535 Flo Road",
+                            Age = 67,
+                            DateOfBirth = new DateTime(1949, 9, 25, 16, 25, 45, 794, DateTimeKind.Local).AddTicks(1832),
+                            Email = "Randi_Nicolas@gmail.com",
+                            FirstName = "Tyler",
+                            Gender = "Male",
+                            LastName = "Macejkovic",
+                            Password = "vaeieieo",
+                            PhoneNumber = "697.983.2219",
+                            RoleId = 2
                         },
                         new
                         {
                             Id = 5,
-                            Address = "17609 Oscar Coves",
-                            Age = 49,
-                            DateOfBirth = new DateTime(1947, 1, 25, 15, 23, 45, 972, DateTimeKind.Local).AddTicks(3251),
-                            Email = "Tyshawn_Lebsack@yahoo.com",
-                            FirstName = "Olga",
+                            Address = "265 Mohr Cape",
+                            Age = 56,
+                            DateOfBirth = new DateTime(1949, 8, 15, 17, 18, 12, 379, DateTimeKind.Local).AddTicks(5509),
+                            Email = "Dameon_Robel@hotmail.com",
+                            FirstName = "Reid",
                             Gender = "Male",
-                            LastName = "Steuber",
-                            Password = "fuiioauo",
-                            PhoneNumber = "534.984.0426",
-                            RoleId = 2
+                            LastName = "Dare",
+                            Password = "hiuioeiu",
+                            PhoneNumber = "848-418-5106 x0072",
+                            RoleId = 1
                         },
                         new
                         {
                             Id = 6,
-                            Address = "1531 Prosacco Mountains",
-                            Age = 99,
-                            DateOfBirth = new DateTime(2002, 11, 25, 2, 20, 48, 118, DateTimeKind.Local).AddTicks(7164),
-                            Email = "Jaime.Nicolas26@yahoo.com",
-                            FirstName = "Finn",
-                            Gender = "Female",
-                            LastName = "Feeney",
-                            Password = "neiieiie",
-                            PhoneNumber = "616.703.8000 x5185",
-                            RoleId = 2
+                            Address = "38842 O'Keefe Expressway",
+                            Age = 22,
+                            DateOfBirth = new DateTime(1986, 1, 27, 17, 48, 44, 366, DateTimeKind.Local).AddTicks(1416),
+                            Email = "Mireille_Walker@gmail.com",
+                            FirstName = "Zoe",
+                            Gender = "Male",
+                            LastName = "Heaney",
+                            Password = "paiiuuiu",
+                            PhoneNumber = "(916) 238-9400",
+                            RoleId = 1
                         },
                         new
                         {
                             Id = 7,
-                            Address = "4121 Stokes Hill",
-                            Age = 62,
-                            DateOfBirth = new DateTime(2006, 8, 11, 7, 38, 49, 34, DateTimeKind.Local).AddTicks(8199),
-                            Email = "Felipa_Quitzon32@gmail.com",
-                            FirstName = "Annabel",
+                            Address = "674 Araceli Garden",
+                            Age = 96,
+                            DateOfBirth = new DateTime(1971, 4, 7, 8, 47, 26, 6, DateTimeKind.Local).AddTicks(7837),
+                            Email = "Llewellyn_Jenkins19@hotmail.com",
+                            FirstName = "Hermina",
                             Gender = "Other",
-                            LastName = "Purdy",
-                            Password = "seieuaiu",
-                            PhoneNumber = "954-771-1529",
-                            RoleId = 2
+                            LastName = "Corkery",
+                            Password = "kiuiaaau",
+                            PhoneNumber = "558-732-2413 x709",
+                            RoleId = 1
                         },
                         new
                         {
                             Id = 8,
-                            Address = "74860 Hamill Trace",
-                            Age = 25,
-                            DateOfBirth = new DateTime(1994, 6, 10, 14, 30, 59, 178, DateTimeKind.Local).AddTicks(4357),
-                            Email = "Noemi98@yahoo.com",
-                            FirstName = "Cristina",
-                            Gender = "Female",
-                            LastName = "Prohaska",
-                            Password = "kauaoeoa",
-                            PhoneNumber = "256-776-1882",
+                            Address = "0594 Mohr Curve",
+                            Age = 20,
+                            DateOfBirth = new DateTime(1977, 2, 22, 15, 10, 11, 140, DateTimeKind.Local).AddTicks(2784),
+                            Email = "Tyrique.Dooley3@yahoo.com",
+                            FirstName = "Jenifer",
+                            Gender = "Male",
+                            LastName = "Hackett",
+                            Password = "gueuaeuo",
+                            PhoneNumber = "(615) 285-7098 x6235",
                             RoleId = 2
                         },
                         new
                         {
                             Id = 9,
-                            Address = "48656 Constantin Flat",
-                            Age = 38,
-                            DateOfBirth = new DateTime(1979, 2, 4, 23, 3, 10, 915, DateTimeKind.Local).AddTicks(4901),
-                            Email = "Narciso_Schoen55@yahoo.com",
-                            FirstName = "Kenya",
-                            Gender = "Female",
-                            LastName = "Satterfield",
-                            Password = "tieiuoee",
-                            PhoneNumber = "838-485-0715 x9351",
+                            Address = "425 Rico Ways",
+                            Age = 65,
+                            DateOfBirth = new DateTime(1974, 4, 22, 12, 17, 28, 355, DateTimeKind.Local).AddTicks(9519),
+                            Email = "Damon_Batz@yahoo.com",
+                            FirstName = "Leatha",
+                            Gender = "Other",
+                            LastName = "Beier",
+                            Password = "touiauae",
+                            PhoneNumber = "728-299-6688 x0249",
                             RoleId = 2
                         },
                         new
                         {
                             Id = 10,
-                            Address = "75073 Gregory Drive",
-                            Age = 64,
-                            DateOfBirth = new DateTime(1954, 8, 31, 5, 44, 18, 379, DateTimeKind.Local).AddTicks(5812),
-                            Email = "Davon78@hotmail.com",
-                            FirstName = "Josiah",
-                            Gender = "Female",
-                            LastName = "Boyer",
-                            Password = "souiuuou",
-                            PhoneNumber = "647-775-3608",
-                            RoleId = 2
+                            Address = "27737 Brice Shores",
+                            Age = 63,
+                            DateOfBirth = new DateTime(1948, 9, 18, 2, 36, 41, 255, DateTimeKind.Local).AddTicks(6995),
+                            Email = "Cristobal24@hotmail.com",
+                            FirstName = "Cordie",
+                            Gender = "Male",
+                            LastName = "Hayes",
+                            Password = "yooaiaeu",
+                            PhoneNumber = "(546) 959-6142 x2663",
+                            RoleId = 1
                         });
                 });
 

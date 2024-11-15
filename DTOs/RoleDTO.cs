@@ -14,4 +14,6 @@ public class RoleDTO
     [Required]
     [MaxLength(500, ErrorMessage = "The description can not have more than 500 characters")]
     public string? Description { get; set; }
+
+    
 }
