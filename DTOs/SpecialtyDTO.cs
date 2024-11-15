@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace Assessment_JulianFelipeForeroVilla.DTOs;
-public class RoleDTO
+public class SpecialtyDTO
 {
     [Required]
     [MaxLength(250, ErrorMessage = "The name can not have more than 250 characters")]

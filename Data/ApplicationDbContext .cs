@@ -8,7 +8,8 @@ public class ApplicationDbContext : DbContext
 {
 
   public DbSet<Mourner> Mourners { get; set; }
-  public DbSet<Role> Roles { get; set; }
+  public DbSet<Doctor> Doctors { get; set; }
+  public DbSet<Specialty> Specialties { get; set; }
 
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
     : base(options)
@@ -17,7 +18,8 @@ public class ApplicationDbContext : DbContext
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {
     base.OnModelCreating(modelBuilder);
-    RolesSeeders.Seed(modelBuilder);
+    // SpecialtySeeders.Seed(modelBuilder);
     MournerSeeders.Seed(modelBuilder);
+    // DoctorSeeders.Seed(modelBuilder);
   }
 }

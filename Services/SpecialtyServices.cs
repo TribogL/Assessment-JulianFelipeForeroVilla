@@ -1,5 +1,4 @@
 
-
 using Assessment_JulianFelipeForeroVilla.Data;
 using Assessment_JulianFelipeForeroVilla.DTOs;
 using Assessment_JulianFelipeForeroVilla.Models;
@@ -7,51 +6,51 @@ using Assessment_JulianFelipeForeroVilla.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace Assessment_JulianFelipeForeroVilla.Services;
-public class RoleServices : IRoleRepository
+public class SpecialtyServices : ISpecialtyRepository
 {
 private readonly ApplicationDbContext _context;
 
-    public RoleServices(ApplicationDbContext context)
+    public SpecialtyServices(ApplicationDbContext context)
     {
         _context = context;
     }
 
-    public async Task<Role> Create(RoleDTO RoleDTO)
+    public async Task<Specialty> Create(SpecialtyDTO SpecialtyDTO)
     {
-        var Role = new Role(RoleDTO.Name, RoleDTO.Description);
-        _context.Roles.Add(Role);
+        var Specialty = new Specialty(SpecialtyDTO.Name, SpecialtyDTO.Description);
+        _context.Specialties.Add(Specialty);
         await _context.SaveChangesAsync();
-        return Role;
+        return Specialty;
     }
 
     public async Task Delete(int id)
     {
-        var Role = await GetById(id);
-        if (Role != null)
+        var Specialty = await GetById(id);
+        if (Specialty != null)
         {
-            _context.Roles.Remove(Role);
+            _context.Specialties.Remove(Specialty);
             await _context.SaveChangesAsync();
         }
     }
 
-    public async Task<IEnumerable<Role>> GetAll()
+    public async Task<IEnumerable<Specialty>> GetAll()
     {
-        return await _context.Roles.ToListAsync();
+        return await _context.Specialties.ToListAsync();
     }
 
-    public async Task<Role?> GetById(int id)
+    public async Task<Specialty?> GetById(int id)
     {
-        return await _context.Roles.FindAsync(id);
+        return await _context.Specialties.FindAsync(id);
     }
 
-    public async Task<IEnumerable<Role>> GetByKeyword(string keyword)
+    public async Task<IEnumerable<Specialty>> GetByKeyword(string keyword)
     {
         if (string.IsNullOrWhiteSpace(keyword))
         {
             return await GetAll();
         }
 
-        return await _context.Roles
+        return await _context.Specialties
     .Where(pc => pc.Name.Contains(keyword) || pc.Description.Contains(keyword))
     .ToListAsync();
 
@@ -62,7 +61,7 @@ private readonly ApplicationDbContext _context;
     {
         try
         {
-            return await _context.Roles.AnyAsync(u => u.Id == id);
+            return await _context.Specialties.AnyAsync(u => u.Id == id);
         }
         catch (Exception exi)
         {

@@ -1,10 +1,8 @@
 
-
 using System.ComponentModel.DataAnnotations;
 
 namespace Assessment_JulianFelipeForeroVilla.DTOs;
-
-public class MournerDTO
+public class DoctorDTO
 {
     // Basic information
     [Required]
@@ -22,21 +20,16 @@ public class MournerDTO
     [Range(1, 150, ErrorMessage = "Your age must be between 1 and 150")]
     public int Age { get; set; }
 
-    [Required]
-    public DateTime DateOfBirth { get; set; }
-
     // Contact information
-    [MaxLength(100, ErrorMessage = "Your nationality can not have more than 100 characters")]
-    public string Nationality { get; set; }
+    public int SpecialtyId { get; set; }
 
-    [MaxLength(100, ErrorMessage = "Your occupation can not have more than 100 characters")]
-    public string Occupation { get; set; }
+    [Required]
+    [MaxLength(150, ErrorMessage = "Your Status can not have more than 150 characters")]
+    public string Status { get; set; }
 
-    [MaxLength(150, ErrorMessage = "Your phone number can not have more than 150 characters")]
-    public string PhoneNumber { get; set; }
 
-    [MaxLength(250, ErrorMessage = "Your address can not have more than 250 characters")]
-    public string Address { get; set; }
+    [Range(1, 300, ErrorMessage = "Your office must be between 1 and 300")]
+    public int Office { get; set; }
 
     // credencials
     [Required]
@@ -49,5 +42,5 @@ public class MournerDTO
     [MaxLength(250, ErrorMessage = "Your password can not have more than 250 characters")]
     public string Password { get; set; }
     
-}
 
+}

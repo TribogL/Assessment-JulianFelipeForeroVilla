@@ -36,11 +36,15 @@ public class Appointment
     [ForeignKey("role_id")]
     public Mourner Mourner { get; set; }
 
+    [ForeignKey("doctor_id")]
+    public Doctor Doctor { get; set; }
+
     public Appointment(int mournerId, int doctorId, DateTime appointmentDate, TimeSpan appointmentTime, string status, string reason)
     {
         MournerId = mournerId;
         DoctorId = doctorId;
         AppointmentDate = appointmentDate;
+        AppointmentTime = appointmentTime;
         Status = status;
         Reason = reason;
 

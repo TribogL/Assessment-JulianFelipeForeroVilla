@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Assessment_JulianFelipeForeroVilla.Models;
-[Table("roles")]
-public class Role
+[Table("specialties")]
+public class Specialty
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -19,14 +19,14 @@ public class Role
     [MaxLength(250)]
     public string Description { get; set; }
 
-    public Role( string name, string description)
+    public Specialty( string name, string description)
     {
         Name = name;
         Description = description;
 
     }
 
-    public Role()
+    public Specialty()
     {
     }
 
