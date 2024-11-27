@@ -40,7 +40,7 @@ public class Appointment
 
     public Appointment()
     {
-        Status = "Scheduled"; // Estado predeterminado
+        
     }
 
     public Appointment(int mournerId, int doctorId, DateTime appointmentDateTime, string status, string reason)

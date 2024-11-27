@@ -1,0 +1,8 @@
+# Ignorar archivos y carpetas innecesarios
+**/bin
+**/obj
+**/.vs
+**/.git
+.dockerignore
+.env
+.env.example

@@ -39,7 +39,7 @@ public class AppointmentServices : IAppointmentRepository
         return await _context.Appointments.ToListAsync();
     }
 
-    public async Task<Appointment?> GetById(int id)
+    public async Task<Appointment> GetById(int id)
     {
         return await _context.Appointments.FindAsync(id);
     }

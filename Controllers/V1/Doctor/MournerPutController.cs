@@ -7,7 +7,7 @@ namespace Assessment_JulianFelipeForeroVilla.Controllers.V1.Doctors;
 [ApiController]
 [Route("api/v1/Doctors")]
 [ApiExplorerSettings(GroupName = "v1")]
-[Tags("Doctors")]
+[Tags("doctors")]
 public class DoctorPutController(IDoctorRepository _DoctorRepository) : DoctorController(_DoctorRepository)
 {
 
